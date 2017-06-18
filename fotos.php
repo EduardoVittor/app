@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    if (!isset($_SESSION["logado"])) {
+        header("location: index.html");
+    }
+?>
+
 <html>
     <head>
         <title>Minhas Fotos</title>
@@ -15,6 +23,8 @@
 
        <br>
        <br>
-       <button>Sair</button>
+       <form action="sair.php">
+            <button type="submit">Sair</button>
+       </form>
     </body>
 </html>

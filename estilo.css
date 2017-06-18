@@ -11,3 +11,11 @@
     margin-top: 100px;
     text-align: center;
 }
+
+#erro {
+    margin: auto auto;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: red;
+}
